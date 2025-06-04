@@ -156,22 +156,22 @@ def deteccion_facilal(frame):
             color = emotion_probability * np.asarray((0, 0, 255))
             SadCounter += 1
             #print("Times Sad detected", SadCounter)
-            f.write(" Numero de eventos Triste: %d\r\n " % AngerCounter)
-            listBox.insert(0," Numero de eventos Triste: %d\r\n " % AngerCounter, proceso)
+            f.write(" Numero de eventos Triste: %d\r\n " % SadCounter)
+            listBox.insert(0," Numero de eventos Triste: %d\r\n " % SadCounter, proceso)
             
         elif emotion_text == 'happy':
             color = emotion_probability * np.asarray((255, 255, 0))
             HappyCounter += 1
             #print("Times Happiness detected",HappyCounter)
-            f.write(" Numero de eventos Felicidad: %d\r\n " % AngerCounter)
-            listBox.insert(0," Numero de eventos Felicidad: %d\r\n " % AngerCounter, proceso)
+            f.write(" Numero de eventos Felicidad: %d\r\n " % HappyCounter)
+            listBox.insert(0," Numero de eventos Felicidad: %d\r\n " % HappyCounter, proceso)
             
         elif emotion_text == 'surprise':
             color = emotion_probability * np.asarray((0, 255, 255))
             SurpriceCounter += 1
             #print("Times surprice detected", SurpriceCounter)
-            f.write(" Numero de eventos Sorpresa: %d\r\n " % AngerCounter)
-            listBox.insert(0," Numero de eventos Sorpresa: %d\r\n " % AngerCounter, proceso)
+            f.write(" Numero de eventos Sorpresa: %d\r\n " % SurpriceCounter)
+            listBox.insert(0," Numero de eventos Sorpresa: %d\r\n " % SurpriceCounter, proceso)
         else:
             color = emotion_probability * np.asarray((0, 255, 0))
 
